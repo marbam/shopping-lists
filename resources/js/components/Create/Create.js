@@ -64,8 +64,8 @@ class Create extends Component {
                 <div className="card-body">
                     <ul>
                         {
-                            this.state.items.map((item) =>
-                                <li>{item}</li>
+                            this.state.items.map((item, index) =>
+                                <li key={index}>{item}</li>
                             )
                         }
                         <label>New Item:</label>

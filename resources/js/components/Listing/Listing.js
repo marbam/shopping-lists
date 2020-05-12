@@ -23,7 +23,7 @@ class Listing extends Component {
         return (
             <div>
                 {this.state.lists.map((l) =>
-                    <List data={l}/>
+                    <List key={l.id} data={l}/>
                 )}
             </div>
         );

@@ -14,8 +14,8 @@ class List extends Component {
                 <div className="card-body">
                     <ul>
                         {
-                            this.props.data.items.map((item) =>
-                                <li>{item.text}</li>
+                            this.props.data.items.map((item, index) =>
+                                <li key={index}>{item.text}</li>
                             )
                         }
                     </ul>
